@@ -1,0 +1,118 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BINARY	src/main.cpp	5;"	kind:macro	line:5
+BUILD_DIR	Makefile	/^BUILD_DIR=build$/;"	kind:macro	line:12
+CheckFileType	scripts/doxygen.vim	/^function! s:CheckFileType()$/;"	kind:function	line:894
+CountBrackets	scripts/doxygen.vim	/^function! s:CountBrackets( buffer )$/;"	kind:function	line:1121
+DEBUG_FLAGS	Makefile	/^DEBUG_FLAGS=$/;"	kind:macro	line:15
+DEBUG_FLAGS	Makefile	/^DEBUG_FLAGS=-DDEBUG_PROGRAM_OPTIONS="1"$/;"	kind:macro	line:13
+Dox	scripts/doxygen.vim	/^command! -nargs=0 Dox :call <SID>DoxygenCommentFunc()$/;"	kind:command	line:1141
+DoxAuthor	scripts/doxygen.vim	/^command! -nargs=0 DoxAuthor :call <SID>DoxygenAuthorFunc()$/;"	kind:command	line:1143
+DoxBlock	scripts/doxygen.vim	/^command! -nargs=0 DoxBlock :call <SID>DoxygenBlockFunc()$/;"	kind:command	line:1145
+DoxLic	scripts/doxygen.vim	/^command! -nargs=0 DoxLic :call <SID>DoxygenLicenseFunc()$/;"	kind:command	line:1142
+DoxUndoc	scripts/doxygen.vim	/^command! -nargs=1 DoxUndoc :call <SID>DoxygenUndocumentFunc(<q-args>)$/;"	kind:command	line:1144
+DoxygenAuthorFunc	scripts/doxygen.vim	/^function! <SID>DoxygenAuthorFunc()$/;"	kind:function	line:467
+DoxygenBlockFunc	scripts/doxygen.vim	/^function! <SID>DoxygenBlockFunc()$/;"	kind:function	line:534
+DoxygenCommentFunc	scripts/doxygen.vim	/^function! <SID>DoxygenCommentFunc()$/;"	kind:function	line:553
+DoxygenLicenseFunc	scripts/doxygen.vim	/^function! <SID>DoxygenLicenseFunc()$/;"	kind:function	line:441
+DoxygenUndocumentFunc	scripts/doxygen.vim	/^function! <SID>DoxygenUndocumentFunc(blockTag)$/;"	kind:function	line:508
+FLAGS	Makefile	/^FLAGS=-std=c++2b -Werror -Wall -O3 -Wextra$/;"	kind:macro	line:9
+GCC	Makefile	/^GCC=g++$/;"	kind:macro	line:3
+InitializeParameters	scripts/doxygen.vim	/^function! s:InitializeParameters()$/;"	kind:function	line:1076
+LIBS	Makefile	/^LIBS=$/;"	kind:macro	line:10
+ParseFunctionParameters	scripts/doxygen.vim	/^function! s:ParseFunctionParameters( lineBuffer, doc )$/;"	kind:function	line:908
+ParseFunctionTemplateParameters	scripts/doxygen.vim	/^function! s:ParseFunctionTemplateParameters( lineBuffer, doc )$/;"	kind:function	line:1043
+ParseParameter	scripts/doxygen.vim	/^function! s:ParseParameter( param )$/;"	kind:function	line:1002
+ParseThrowParameters	scripts/doxygen.vim	/^function! s:ParseThrowParameters( lineBuffer, doc, throwPattern )$/;"	kind:function	line:1066
+RELEASE_FLAGS	Makefile	/^RELEASE_FLAGS=$/;"	kind:macro	line:14
+RT_ALPHA	src/main.cpp	/^	RT_ALPHA,$/;"	kind:enumerator	line:8	enum:range_preference
+RT_NUMERIC	src/main.cpp	/^	RT_NUMERIC,$/;"	kind:enumerator	line:7	enum:range_preference
+RemoveComments	scripts/doxygen.vim	/^function! s:RemoveComments( lineBuffer )$/;"	kind:function	line:872
+RestoreParameters	scripts/doxygen.vim	/^function! s:RestoreParameters()$/;"	kind:function	line:1107
+STATIC_LIBS	Makefile	/^STATIC_LIBS=$/;"	kind:macro	line:11
+StartDocumentationBlock	scripts/doxygen.vim	/^function! s:StartDocumentationBlock()$/;"	kind:function	line:853
+VERSION_DEFINES	Makefile	/^VERSION_DEFINES=-DVERSION_MAJOR=$(VERSION_MAJOR) -DVERSION_MINOR=$(VERSION_MINOR) -DVERSION_SUB_MINOR=$(VERSION_SUB_MINOR)$/;"	kind:macro	line:8
+VERSION_MAJOR	Makefile	/^VERSION_MAJOR=1$/;"	kind:macro	line:5
+VERSION_MINOR	Makefile	/^VERSION_MINOR=0$/;"	kind:macro	line:6
+VERSION_SUB_MINOR	Makefile	/^VERSION_SUB_MINOR=1$/;"	kind:macro	line:7
+WarnMsg	scripts/doxygen.vim	/^function! s:WarnMsg( msg )$/;"	kind:function	line:1131
+blasphemy	src/main.cpp	/^	bool blasphemy; \/\/ if true, first is 1, otherwise first is zero$/;"	kind:member	line:15	struct:program_options	access:public
+dump_opts	src/main.cpp	/^void dump_opts(const program_options& opts) {$/;"	kind:function	line:21	signature:(const program_options& opts)
+dump_opts	src/main.cpp	41;"	kind:macro	line:41
+dump_vector	src/main.cpp	/^void dump_vector(const std::vector<std::string>& non_flag_parameters) {$/;"	kind:function	line:33	signature:(const std::vector<std::string>& non_flag_parameters)
+dump_vector	src/main.cpp	42;"	kind:macro	line:42
+expecting_different_separator	src/main.cpp	/^	bool expecting_different_separator;$/;"	kind:member	line:17	struct:program_options	access:public
+first	src/main.cpp	/^	int first;$/;"	kind:member	line:12	struct:program_options	access:public
+g:DoxygenToolkit_authorTag	scripts/doxygen.vim	/^  let g:DoxygenToolkit_authorTag = "@author "$/;"	kind:variable	line:322
+g:DoxygenToolkit_blockFooter	scripts/doxygen.vim	/^  let g:DoxygenToolkit_blockFooter = ""$/;"	kind:variable	line:313
+g:DoxygenToolkit_blockHeader	scripts/doxygen.vim	/^  let g:DoxygenToolkit_blockHeader = ""$/;"	kind:variable	line:310
+g:DoxygenToolkit_blockTag	scripts/doxygen.vim	/^  let g:DoxygenToolkit_blockTag = "@name "$/;"	kind:variable	line:334
+g:DoxygenToolkit_briefTag_className	scripts/doxygen.vim	/^  let g:DoxygenToolkit_briefTag_className = "no"$/;"	kind:variable	line:406
+g:DoxygenToolkit_briefTag_enumName	scripts/doxygen.vim	/^  let g:DoxygenToolkit_briefTag_enumName = "no"$/;"	kind:variable	line:412
+g:DoxygenToolkit_briefTag_funcName	scripts/doxygen.vim	/^  let g:DoxygenToolkit_briefTag_funcName = "no"$/;"	kind:variable	line:418
+g:DoxygenToolkit_briefTag_namespaceName	scripts/doxygen.vim	/^  let g:DoxygenToolkit_briefTag_namespaceName = "no"$/;"	kind:variable	line:415
+g:DoxygenToolkit_briefTag_post	scripts/doxygen.vim	/^  let g:DoxygenToolkit_briefTag_post = ""$/;"	kind:variable	line:286
+g:DoxygenToolkit_briefTag_pre	scripts/doxygen.vim	/^  let g:DoxygenToolkit_briefTag_pre = "@brief "$/;"	kind:variable	line:283
+g:DoxygenToolkit_briefTag_structName	scripts/doxygen.vim	/^  let g:DoxygenToolkit_briefTag_structName = "no"$/;"	kind:variable	line:409
+g:DoxygenToolkit_cinoptions	scripts/doxygen.vim	/^    let g:DoxygenToolkit_cinoptions = "c1C1"$/;"	kind:variable	line:341
+g:DoxygenToolkit_classTag	scripts/doxygen.vim	/^  let g:DoxygenToolkit_classTag = "@class "$/;"	kind:variable	line:337
+g:DoxygenToolkit_commentType	scripts/doxygen.vim	/^    let g:DoxygenToolkit_commentType = "C"$/;"	kind:variable	line:366
+g:DoxygenToolkit_commentType	scripts/doxygen.vim	/^  let g:DoxygenToolkit_commentType = "C"$/;"	kind:variable	line:369
+g:DoxygenToolkit_compactDoc	scripts/doxygen.vim	/^  let g:DoxygenToolkit_compactDoc = "no"$/;"	kind:variable	line:387
+g:DoxygenToolkit_compactOneLineDoc	scripts/doxygen.vim	/^  let g:DoxygenToolkit_compactOneLineDoc = "no"$/;"	kind:variable	line:377
+g:DoxygenToolkit_dateTag	scripts/doxygen.vim	/^  let g:DoxygenToolkit_dateTag = "@date "$/;"	kind:variable	line:325
+g:DoxygenToolkit_endCommentBlock	scripts/doxygen.vim	/^    let g:DoxygenToolkit_endCommentBlock = ""$/;"	kind:variable	line:364
+g:DoxygenToolkit_endCommentBlock	scripts/doxygen.vim	/^  let g:DoxygenToolkit_endCommentBlock = "*\/"$/;"	kind:variable	line:355
+g:DoxygenToolkit_endCommentTag	scripts/doxygen.vim	/^    let g:DoxygenToolkit_endCommentTag = ""$/;"	kind:variable	line:361
+g:DoxygenToolkit_endCommentTag	scripts/doxygen.vim	/^  let g:DoxygenToolkit_endCommentTag = "*\/"$/;"	kind:variable	line:354
+g:DoxygenToolkit_fileTag	scripts/doxygen.vim	/^  let g:DoxygenToolkit_fileTag = "@file "$/;"	kind:variable	line:319
+g:DoxygenToolkit_ignoreForReturn	scripts/doxygen.vim	/^  let g:DoxygenToolkit_ignoreForReturn += s:ignoreForReturn$/;"	kind:variable	line:395
+g:DoxygenToolkit_ignoreForReturn	scripts/doxygen.vim	/^  let g:DoxygenToolkit_ignoreForReturn = s:ignoreForReturn[:]$/;"	kind:variable	line:393
+g:DoxygenToolkit_interCommentBlock	scripts/doxygen.vim	/^    let g:DoxygenToolkit_interCommentBlock = "\/\/ "$/;"	kind:variable	line:363
+g:DoxygenToolkit_interCommentBlock	scripts/doxygen.vim	/^  let g:DoxygenToolkit_interCommentBlock = "* "$/;"	kind:variable	line:351
+g:DoxygenToolkit_interCommentTag	scripts/doxygen.vim	/^    let g:DoxygenToolkit_interCommentTag = "\/\/\/ "$/;"	kind:variable	line:360
+g:DoxygenToolkit_interCommentTag	scripts/doxygen.vim	/^  let g:DoxygenToolkit_interCommentTag = "* "$/;"	kind:variable	line:348
+g:DoxygenToolkit_keepEmptyLineAfterComment	scripts/doxygen.vim	/^  let g:DoxygenToolkit_keepEmptyLineAfterComment = "no"$/;"	kind:variable	line:423
+g:DoxygenToolkit_licenseTag	scripts/doxygen.vim	/^  let g:DoxygenToolkit_licenseTag = s:licenseTag$/;"	kind:variable	line:316
+g:DoxygenToolkit_maxFunctionProtoLines	scripts/doxygen.vim	/^  let g:DoxygenToolkit_maxFunctionProtoLines = 10$/;"	kind:variable	line:401
+g:DoxygenToolkit_paramTag_post	scripts/doxygen.vim	/^  let g:DoxygenToolkit_paramTag_post = ""$/;"	kind:variable	line:298
+g:DoxygenToolkit_paramTag_pre	scripts/doxygen.vim	/^  let g:DoxygenToolkit_paramTag_pre = "@param "$/;"	kind:variable	line:295
+g:DoxygenToolkit_python_autoFunctionReturn	scripts/doxygen.vim	/^  let g:DoxygenToolkit_python_autoFunctionReturn = "yes"$/;"	kind:variable	line:434
+g:DoxygenToolkit_python_autoRemoveSelfParam	scripts/doxygen.vim	/^  let g:DoxygenToolkit_python_autoRemoveSelfParam = "yes"$/;"	kind:variable	line:430
+g:DoxygenToolkit_returnTag	scripts/doxygen.vim	/^  let g:DoxygenToolkit_returnTag = "@return "$/;"	kind:variable	line:301
+g:DoxygenToolkit_startCommentBlock	scripts/doxygen.vim	/^    let g:DoxygenToolkit_startCommentBlock = "\/\/ "$/;"	kind:variable	line:362
+g:DoxygenToolkit_startCommentBlock	scripts/doxygen.vim	/^  let g:DoxygenToolkit_startCommentBlock = "\/* "$/;"	kind:variable	line:345
+g:DoxygenToolkit_startCommentTag	scripts/doxygen.vim	/^    let g:DoxygenToolkit_startCommentTag = "\/\/\/ "$/;"	kind:variable	line:359
+g:DoxygenToolkit_startCommentTag	scripts/doxygen.vim	/^  let g:DoxygenToolkit_startCommentTag = "\/** "$/;"	kind:variable	line:344
+g:DoxygenToolkit_templateParamTag_post	scripts/doxygen.vim	/^  let g:DoxygenToolkit_templateParamTag_post = ""$/;"	kind:variable	line:292
+g:DoxygenToolkit_templateParamTag_pre	scripts/doxygen.vim	/^  let g:DoxygenToolkit_templateParamTag_pre = "@tparam "$/;"	kind:variable	line:289
+g:DoxygenToolkit_throwTag_post	scripts/doxygen.vim	/^  let g:DoxygenToolkit_throwTag_post = ""$/;"	kind:variable	line:307
+g:DoxygenToolkit_throwTag_pre	scripts/doxygen.vim	/^  let g:DoxygenToolkit_throwTag_pre = "@throw " " @exception is also valid$/;"	kind:variable	line:304
+g:DoxygenToolkit_undocTag	scripts/doxygen.vim	/^  let g:DoxygenToolkit_undocTag = "DOX_SKIP_BLOCK"$/;"	kind:variable	line:331
+g:DoxygenToolkit_versionTag	scripts/doxygen.vim	/^  let g:DoxygenToolkit_versionTag = "@version "$/;"	kind:variable	line:328
+increment	src/main.cpp	/^	int increment;$/;"	kind:member	line:14	struct:program_options	access:public
+last	src/main.cpp	/^	int last;$/;"	kind:member	line:13	struct:program_options	access:public
+loaded_DoxygenToolkit	scripts/doxygen.vim	/^let loaded_DoxygenToolkit = 1$/;"	kind:variable	line:266
+main	src/main.cpp	/^int main(int argc,char** argv) {$/;"	kind:function	line:96	signature:(int argc,char** argv)
+print_range	src/main.cpp	/^int print_range(program_options& options,const std::vector<std::string>& params) {$/;"	kind:function	line:45	signature:(program_options& options,const std::vector<std::string>& params)
+program_options	src/main.cpp	/^struct program_options {$/;"	kind:struct	line:10
+range_type	src/main.cpp	/^	range_preference range_type;$/;"	kind:member	line:11	struct:program_options	access:public
+s:ignoreForReturn	scripts/doxygen.vim	/^let s:ignoreForReturn = ['template', 'explicit', 'inline', 'static', 'virtual', 'void\\([[:blank:]]*\\*\\)\\@!', 'const', 'volatile', 'struct', 'extern']$/;"	kind:variable	line:391
+s:licenseTag	scripts/doxygen.vim	/^let s:licenseTag = "Copyright (C) \\<enter>\\<enter>"$/;"	kind:variable	line:268
+s:licenseTag	scripts/doxygen.vim	/^let s:licenseTag = s:licenseTag . "Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.\\<enter>"$/;"	kind:variable	line:279
+s:licenseTag	scripts/doxygen.vim	/^let s:licenseTag = s:licenseTag . "GNU General Public License for more details.\\<enter>\\<enter>"$/;"	kind:variable	line:276
+s:licenseTag	scripts/doxygen.vim	/^let s:licenseTag = s:licenseTag . "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\\<enter>"$/;"	kind:variable	line:275
+s:licenseTag	scripts/doxygen.vim	/^let s:licenseTag = s:licenseTag . "This program is distributed in the hope that it will be useful,\\<enter>"$/;"	kind:variable	line:273
+s:licenseTag	scripts/doxygen.vim	/^let s:licenseTag = s:licenseTag . "This program is free software; you can redistribute it and\/or\\<enter>"$/;"	kind:variable	line:269
+s:licenseTag	scripts/doxygen.vim	/^let s:licenseTag = s:licenseTag . "You should have received a copy of the GNU General Public License\\<enter>"$/;"	kind:variable	line:277
+s:licenseTag	scripts/doxygen.vim	/^let s:licenseTag = s:licenseTag . "along with this program; if not, write to the Free Software\\<enter>"$/;"	kind:variable	line:278
+s:licenseTag	scripts/doxygen.vim	/^let s:licenseTag = s:licenseTag . "as published by the Free Software Foundation; either version 2\\<enter>"$/;"	kind:variable	line:271
+s:licenseTag	scripts/doxygen.vim	/^let s:licenseTag = s:licenseTag . "but WITHOUT ANY WARRANTY; without even the implied warranty of\\<enter>"$/;"	kind:variable	line:274
+s:licenseTag	scripts/doxygen.vim	/^let s:licenseTag = s:licenseTag . "modify it under the terms of the GNU General Public License\\<enter>"$/;"	kind:variable	line:270
+s:licenseTag	scripts/doxygen.vim	/^let s:licenseTag = s:licenseTag . "of the License, or (at your option) any later version.\\<enter>\\<enter>"$/;"	kind:variable	line:272
+separator	src/main.cpp	/^	std::string separator;$/;"	kind:member	line:16	struct:program_options	access:public
+usage	src/main.cpp	/^void usage() {$/;"	kind:function	line:70	signature:()

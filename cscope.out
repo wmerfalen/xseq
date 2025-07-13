@@ -1,0 +1,949 @@
+cscope 15 $HOME/code/xseq               0000005645
+	@src/main.cpp
+
+1 
+	~<io¡»am
+>
+
+2 
+	~<¡ršg
+>
+
+3 
+	~<veùÜ
+>
+
+5 
+	#BINARY
+ "x£q"
+
+	)
+
+6 
+	e¿nge_´eã»nû
+ {
+
+7 
+	mRT_NUMERIC
+,
+
+8 
+	mRT_ALPHA
+,
+
+10 
+	s´og¿m_İtiÚs
+ {
+
+11 
+¿nge_´eã»nû
+ 
+	m¿nge_ty³
+;
+
+12 
+	mfœ¡
+;
+
+13 
+	mÏ¡
+;
+
+14 
+	mšüem’t
+;
+
+15 
+boŞ
+ 
+	mbÏ¥hemy
+;
+
+16 
+	m¡d
+::
+¡ršg
+ 
+£·¿tÜ
+;
+
+17 
+boŞ
+ 
+	mex³ùšg_difã»Á_£·¿tÜ
+;
+
+20 #ià
+defšed
+(
+DEBUG_PROGRAM_OPTIONS
+)
+
+21 
+	$dump_İts
+(cÚ¡ 
+´og¿m_İtiÚs
+& 
+İts
+) {
+
+22 
+	`´štf
+("[¿nge_ty³:%s]\n",
+İts
+.
+¿nge_ty³
+ =ğ
+RT_ALPHA
+ ? "alpha" : "numeric");
+
+23 if(
+İts
+.
+¿nge_ty³
+ =ğ
+RT_ALPHA
+) {
+
+24 
+	`´štf
+("[fœ¡:%c]\n",()
+İts
+.
+fœ¡
+);
+
+25 
+	`´štf
+("[Ï¡:%c]\n",()
+İts
+.
+Ï¡
+);
+
+26 
+	`´štf
+("[šüem’t:%d]\n",
+İts
+.
+šüem’t
+);
+
+28 
+	`´štf
+("[fœ¡:%d]\n",
+İts
+.
+fœ¡
+);
+
+29 
+	`´štf
+("[Ï¡:%d]\n",
+İts
+.
+Ï¡
+);
+
+30 
+	`´štf
+("[šüem’t:%d]\n",
+İts
+.
+šüem’t
+);
+
+32 
+	}
+}
+
+33 
+dump_veùÜ
+(cÚ¡ 
+¡d
+::
+veùÜ
+<¡d::
+¡ršg
+>& 
+nÚ_æag_·¿m‘”s
+) {
+
+34 
+´štf
+("[dump_veùÜ(size:%lu)]\n",
+nÚ_æag_·¿m‘”s
+.
+size
+());
+
+35 
+	g¡d
+::
+size_t
+ 
+i
+=0; 
+	gi
+ < 
+	gnÚ_æag_·¿m‘”s
+.
+size
+(); i++) {
+
+36 
+´štf
+("[%lu]=>'%s'\n",
+i
+,
+nÚ_æag_·¿m‘”s
+[i].
+c_¡r
+());
+
+38 
+´štf
+("[end of dump_vector]\n");
+
+41 
+	#dump_İts
+(
+A
+)
+
+	)
+
+42 
+	#dump_veùÜ
+(
+nÚ_æag_·¿m‘”s
+)
+
+	)
+
+45 
+´št_¿nge
+(
+´og¿m_İtiÚs
+& 
+İtiÚs
+,cÚ¡ 
+¡d
+::
+veùÜ
+<¡d::
+¡ršg
+>& 
+·¿ms
+) {
+
+46 if(
+İtiÚs
+.
+šüem’t
+ == 0) {
+
+47 
+´štf
+("%s: inv®id Z”Øšüem’ˆv®ue: â€˜0â€™\n",
+BINARY
+);
+
+48 
+´štf
+("Try '% --h–p' fÜ mÜšfÜm©iÚ.\n",
+BINARY
+);
+
+51 if(
+	gİtiÚs
+.
+	g¿nge_ty³
+ =ğ
+RT_NUMERIC
+) {
+
+52 if(
+İtiÚs
+.
+Ï¡
+ < o±iÚs.
+fœ¡
+) {
+
+55 
+	gi
+=
+İtiÚs
+.
+fœ¡
+; i <ğİtiÚs.
+Ï¡
+; i +ğİtiÚs.
+šüem’t
+) {
+
+56 
+´štf
+("%d%s",
+i
+,
+İtiÚs
+.
+£·¿tÜ
+.
+c_¡r
+());
+
+58 
+dump_İts
+(
+İtiÚs
+);
+
+61 if(
+	gİtiÚs
+.
+	g¿nge_ty³
+ =ğ
+RT_ALPHA
+) {
+
+62 
+i
+=
+İtiÚs
+.
+fœ¡
+; 
+	gi
+ <ğİtiÚs.
+Ï¡
+; i +ğİtiÚs.
+šüem’t
+) {
+
+63 
+´štf
+("%c%s",()
+i
+,
+İtiÚs
+.
+£·¿tÜ
+.
+c_¡r
+());
+
+65 
+dump_İts
+(
+İtiÚs
+);
+
+70 
+	$u§ge
+() {
+
+71 cÚ¡ * 
+bš
+ = 
+BINARY
+;
+
+72 
+¡d
+::
+û¼
+
+
+73 << "U§ge: " << 
+bš
+ << " [OPTION]... <LAST>\n"
+
+74 << " or: " << 
+bš
+ << " [OPTION]... <FIRST> <LAST>\n"
+
+75 << " or: " << 
+bš
+ << " [OPTION]... <FIRST> <INCREMENT> <LAST>\n"
+
+88 << " " << 
+bš
+ << " -a A Z\n"
+
+89 << " " << 
+bš
+ << " A Z\n"
+
+92 << " " << 
+bš
+ << " A 3 Z\n"
+
+94 
+	}
+}
+
+96 
+	$maš
+(
+¬gc
+,** 
+¬gv
+) {
+
+97 
+´og¿m_İtiÚs
+ 
+İtiÚs
+;
+
+98 
+İtiÚs
+.
+¿nge_ty³
+ = 
+RT_NUMERIC
+;
+
+99 
+İtiÚs
+.
+fœ¡
+ = 1;
+
+100 
+İtiÚs
+.
+Ï¡
+= 1;
+
+101 
+İtiÚs
+.
+šüem’t
+ = 1;
+
+102 
+İtiÚs
+.
+bÏ¥hemy
+ = 
+Œue
+;
+
+103 
+İtiÚs
+.
+ex³ùšg_difã»Á_£·¿tÜ
+ = 
+çl£
+;
+
+104 
+İtiÚs
+.
+£·¿tÜ
+ = "\n";
+
+105 cÚ¡ 
+¡d
+::
+¡ršg
+ 
+lÚg_£·¿tÜ_İtiÚ
+ = "--separator=";
+
+106 cÚ¡ 
+¡d
+::
+size_t
+ 
+lÚg_£·¿tÜ_İtiÚ_Ëngth
+ = 
+lÚg_£·¿tÜ_İtiÚ
+.
+	`Ëngth
+();
+
+107 
+¡d
+::
+veùÜ
+<¡d::
+¡ršg
+> 
+¬gs
+;
+
+108 
+¡d
+::
+veùÜ
+<¡d::
+¡ršg
+> 
+nÚ_æag_·¿m‘”s
+;
+
+109 
+i
+=0; i < 
+¬gc
+; i++) {
+
+110 
+¬gs
+.
+	`push_back
+(
+¬gv
+[
+i
+]);
+
+112 if(
+¬gs
+.
+	`size
+() < 2) {
+
+113 
+	`u§ge
+();
+
+116 
+boŞ
+ 
+ÿ±u»_£·¿tÜ
+ = 
+çl£
+;
+
+118 
+i
+=1; i < 
+¬gs
+.
+	`size
+(); i++) {
+
+119 if(
+¬gs
+[
+i
+].
+	`com·»
+("-a") == 0 ||‡rgs[i].compare("--alpha") == 0) {
+
+120 
+İtiÚs
+.
+¿nge_ty³
+ = 
+RT_ALPHA
+;
+
+123 if(
+¬gs
+[
+i
+].
+	`com·»
+("-z") == 0 ||‡rgs[i].compare("--zero") == 0) {
+
+124 
+İtiÚs
+.
+fœ¡
+ = 0;
+
+125 
+İtiÚs
+.
+bÏ¥hemy
+ = 
+çl£
+;
+
+128 if(
+¬gs
+[
+i
+].
+	`com·»
+("-h") == 0 ||‡rgs[i].compare("--help") == 0) {
+
+129 
+	`u§ge
+();
+
+132 if(
+¬gs
+[
+i
+].
+	`com·»
+("-v") == 0 ||‡rgs[i].compare("--version") == 0) {
+
+133 
+	`´štf
+("% 1.0\n",
+BINARY
+);
+
+134 
+	`´štf
+("License GPLv3+: GNU GPL version 3 or†ater <https://gnu.org/licenses/gpl.html>.\n");
+
+135 
+	`´štf
+("This is free software: you‡re freeo change‡nd„edistribute it.\n");
+
+136 
+	`´štf
+("There is NO WARRANTY,oheƒxtent…ermitted by†aw.\n");
+
+137 
+	`´štf
+("\n");
+
+138 
+	`´štf
+("This…rogram is inspired by seq which is‡ coreutils…rogram originally written by Ulrich Drepper.\n");
+
+139 
+	`´štf
+("Written by William Merfalen\n");
+
+142 if(
+¬gs
+[
+i
+].
+	`com·»
+("-s") == 0) {
+
+143 
+ÿ±u»_£·¿tÜ
+ = 
+Œue
+;
+
+144 
+İtiÚs
+.
+ex³ùšg_difã»Á_£·¿tÜ
+ = 
+Œue
+;
+
+147 if(
+ÿ±u»_£·¿tÜ
+) {
+
+148 
+İtiÚs
+.
+£·¿tÜ
+ = 
+¬gs
+[
+i
+];
+
+149 
+ÿ±u»_£·¿tÜ
+ = 
+çl£
+;
+
+150 
+İtiÚs
+.
+ex³ùšg_difã»Á_£·¿tÜ
+ = 
+çl£
+;
+
+153 if(
+¬gs
+[
+i
+].
+	`Ëngth
+(è> 
+lÚg_£·¿tÜ_İtiÚ_Ëngth
+ &&‡rgs[i].
+	`sub¡r
+(0,lÚg_£·¿tÜ_İtiÚ_Ëngth).
+	`com·»
+(
+lÚg_£·¿tÜ_İtiÚ
+.
+	`c_¡r
+()) == 0) {
+
+154 
+İtiÚs
+.
+£·¿tÜ
+ = 
+¬gs
+[
+i
+].
+	`sub¡r
+(
+lÚg_£·¿tÜ_İtiÚ_Ëngth
+);
+
+155 
+İtiÚs
+.
+ex³ùšg_difã»Á_£·¿tÜ
+ = 
+çl£
+;
+
+159 
+nÚ_æag_·¿m‘”s
+.
+	`push_back
+(
+¬gs
+[
+i
+]);
+
+161 
+	`dump_veùÜ
+(
+nÚ_æag_·¿m‘”s
+);
+
+162 
+nÚ_æag_·¿m‘”s
+.
+	`size
+()) {
+
+164 if(
+	`i§Íha
+(
+nÚ_æag_·¿m‘”s
+[0][0]è&&‚Ú_æag_·¿m‘”s[0].
+	`Ëngth
+() == 1) {
+
+165 
+İtiÚs
+.
+¿nge_ty³
+ = 
+RT_ALPHA
+;
+
+166 
+İtiÚs
+.
+fœ¡
+ = '\0';
+
+168 if(
+İtiÚs
+.
+¿nge_ty³
+ =ğ
+RT_NUMERIC
+) {
+
+169 
+İtiÚs
+.
+Ï¡
+ = 
+	`©oi
+(
+nÚ_æag_·¿m‘”s
+[0].
+	`c_¡r
+());
+
+171 
+İtiÚs
+.
+Ï¡
+ = 
+nÚ_æag_·¿m‘”s
+[0][0];
+
+175 if(
+	`i§Íha
+(
+nÚ_æag_·¿m‘”s
+[0][0]) && isalpha(non_flag_parameters[1][0])) {
+
+176 
+İtiÚs
+.
+¿nge_ty³
+ = 
+RT_ALPHA
+;
+
+178 if(
+İtiÚs
+.
+¿nge_ty³
+ =ğ
+RT_NUMERIC
+) {
+
+179 
+İtiÚs
+.
+fœ¡
+ = 
+	`©oi
+(
+nÚ_æag_·¿m‘”s
+[0].
+	`c_¡r
+());
+
+180 
+İtiÚs
+.
+Ï¡
+ = 
+	`©oi
+(
+nÚ_æag_·¿m‘”s
+[1].
+	`c_¡r
+());
+
+182 
+İtiÚs
+.
+fœ¡
+ = 
+nÚ_æag_·¿m‘”s
+[0][0];
+
+183 
+İtiÚs
+.
+Ï¡
+ = 
+nÚ_æag_·¿m‘”s
+[1][0];
+
+187 if(
+	`i§Íha
+(
+nÚ_æag_·¿m‘”s
+[0][0]) && isalpha(non_flag_parameters[2][0])) {
+
+188 
+İtiÚs
+.
+¿nge_ty³
+ = 
+RT_ALPHA
+;
+
+190 if(
+İtiÚs
+.
+¿nge_ty³
+ =ğ
+RT_NUMERIC
+) {
+
+191 
+İtiÚs
+.
+fœ¡
+ = 
+	`©oi
+(
+nÚ_æag_·¿m‘”s
+[0].
+	`c_¡r
+());
+
+192 
+İtiÚs
+.
+šüem’t
+ = 
+	`©oi
+(
+nÚ_æag_·¿m‘”s
+[1].
+	`c_¡r
+());
+
+193 
+İtiÚs
+.
+Ï¡
+ = 
+	`©oi
+(
+nÚ_æag_·¿m‘”s
+[2].
+	`c_¡r
+());
+
+195 
+İtiÚs
+.
+fœ¡
+ = 
+nÚ_æag_·¿m‘”s
+[0][0];
+
+196 
+İtiÚs
+.
+šüem’t
+ = 
+	`©oi
+(
+nÚ_æag_·¿m‘”s
+[1].
+	`c_¡r
+());
+
+197 
+İtiÚs
+.
+Ï¡
+ = 
+nÚ_æag_·¿m‘”s
+[2][0];
+
+204  
+	`´št_¿nge
+(
+İtiÚs
+,
+nÚ_æag_·¿m‘”s
+);
+
+205 
+	}
+}
+
+	@
+1
+.
+1
+/usr/include
+1
+13
+src/main.cpp
