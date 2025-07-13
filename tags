@@ -97,8 +97,8 @@ g:DoxygenToolkit_versionTag	scripts/doxygen.vim	/^  let g:DoxygenToolkit_version
 increment	src/main.cpp	/^	int increment;$/;"	kind:member	line:14	struct:program_options	access:public
 last	src/main.cpp	/^	int last;$/;"	kind:member	line:13	struct:program_options	access:public
 loaded_DoxygenToolkit	scripts/doxygen.vim	/^let loaded_DoxygenToolkit = 1$/;"	kind:variable	line:266
-main	src/main.cpp	/^int main(int argc,char** argv) {$/;"	kind:function	line:96	signature:(int argc,char** argv)
-print_range	src/main.cpp	/^int print_range(program_options& options,const std::vector<std::string>& params) {$/;"	kind:function	line:45	signature:(program_options& options,const std::vector<std::string>& params)
+main	src/main.cpp	/^int main(int argc,char** argv) {$/;"	kind:function	line:107	signature:(int argc,char** argv)
+print_range	src/main.cpp	/^int print_range(const program_options& options,const std::vector<std::string>& params) {$/;"	kind:function	line:45	signature:(const program_options& options,const std::vector<std::string>& params)
 program_options	src/main.cpp	/^struct program_options {$/;"	kind:struct	line:10
 range_type	src/main.cpp	/^	range_preference range_type;$/;"	kind:member	line:11	struct:program_options	access:public
 s:ignoreForReturn	scripts/doxygen.vim	/^let s:ignoreForReturn = ['template', 'explicit', 'inline', 'static', 'virtual', 'void\\([[:blank:]]*\\*\\)\\@!', 'const', 'volatile', 'struct', 'extern']$/;"	kind:variable	line:391
@@ -115,4 +115,4 @@ s:licenseTag	scripts/doxygen.vim	/^let s:licenseTag = s:licenseTag . "but WITHOU
 s:licenseTag	scripts/doxygen.vim	/^let s:licenseTag = s:licenseTag . "modify it under the terms of the GNU General Public License\\<enter>"$/;"	kind:variable	line:270
 s:licenseTag	scripts/doxygen.vim	/^let s:licenseTag = s:licenseTag . "of the License, or (at your option) any later version.\\<enter>\\<enter>"$/;"	kind:variable	line:272
 separator	src/main.cpp	/^	std::string separator;$/;"	kind:member	line:16	struct:program_options	access:public
-usage	src/main.cpp	/^void usage() {$/;"	kind:function	line:70	signature:()
+usage	src/main.cpp	/^void usage() {$/;"	kind:function	line:81	signature:()

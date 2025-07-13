@@ -42,25 +42,36 @@ void dump_vector(const std::vector<std::string>& non_flag_parameters) {
 #define dump_vector(non_flag_parameters)
 #endif
 
-int print_range(program_options& options,const std::vector<std::string>& params) {
+int print_range(const program_options& options,const std::vector<std::string>& params) {
 	if(options.increment == 0) {
 		printf("%s: invalid Zero increment value: ‘0’\n",BINARY);
 		printf("Try '%s --help' for more information.\n",BINARY);
 		return 1;
 	}
 	if(options.range_type == RT_NUMERIC) {
-		if(options.last < options.first) {
-			return 0;
-		}
-		for(int i=options.first; i <= options.last; i += options.increment) {
-			printf("%d%s",i,options.separator.c_str());
+		if(options.first > options.last) {
+			for(int i=options.first; i >= options.last;) {
+				printf("%d%s",i,options.separator.c_str());
+				i -= options.increment;
+			}
+		} else {
+			for(int i=options.first; i <= options.last; i += options.increment) {
+				printf("%d%s",i,options.separator.c_str());
+			}
 		}
 		dump_opts(options);
 		return 0;
 	}
 	if(options.range_type == RT_ALPHA) {
-		for(int i=options.first; i <= options.last; i += options.increment) {
-			printf("%c%s",(char)i,options.separator.c_str());
+		if(options.first > options.last) {
+			for(int i=options.first; i >= options.last;) {
+				printf("%c%s",(char)i,options.separator.c_str());
+				i -= options.increment;
+			}
+		} else {
+			for(int i=options.first; i <= options.last; i += options.increment) {
+				printf("%c%s",(char)i,options.separator.c_str());
+			}
 		}
 		dump_opts(options);
 		return 0;
