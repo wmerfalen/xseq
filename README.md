@@ -58,7 +58,7 @@ $ xseq 1 5
 
 # automatic letter recognition
 ```sh
-xseq A F
+$ xseq A F
 A
 B
 C
@@ -69,7 +69,7 @@ F
 
 # INCREMENT works with letters and numbers
 ```sh
-xseq A 3 M
+$ xseq A 3 M
 A
 D
 G
@@ -104,4 +104,13 @@ Admittedly, this output is a bit janky, but you get the idea.
 You will need to have `g++` installed. A simple `make` will build the binary for you.
 The code was written using widely supported C++ features. The code should compile just fine without having to tell your compiler which version of the c++ standard to use. Everything is written using well-established libraries. There are only three header files included.
 
+# License
+Copyright (C) 2025 William Merfalen
+License GPLv3+: [GNU GPL version 3 or later](https://gnu.org/licenses/gpl.html)
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+seq is a coreutils program originally written by [Ulrich Drepper](https://github.com/drepper)
+
+# Author
+WIlliam Merfalen
 
