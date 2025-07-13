@@ -6,7 +6,7 @@ VERSION_MAJOR=1
 VERSION_MINOR=0
 VERSION_SUB_MINOR=1
 VERSION_DEFINES=-DVERSION_MAJOR=$(VERSION_MAJOR) -DVERSION_MINOR=$(VERSION_MINOR) -DVERSION_SUB_MINOR=$(VERSION_SUB_MINOR)
-FLAGS=-std=c++2b -Werror -Wall -O3 -Wextra
+FLAGS=-Werror -Wall -O3
 LIBS=
 STATIC_LIBS=
 BUILD_DIR=build
@@ -21,9 +21,9 @@ build-dir:
 	mkdir -p $(BUILD_DIR)
 
 xseq: build-dir
-	$(GCC) $(RELEASE_FLAGS) $(INCLUDES) \
+	$(GCC) $(FLAGS) $(RELEASE_FLAGS) $(INCLUDES) \
 		./src/main.cpp -o $(BUILD_DIR)/xseq $(STATIC_LIBS) $(LIBS)
 
 test-xseq: build-dir
-	$(GCC) $(DEBUG_FLAGS) $(INCLUDES) \
+	$(GCC) $(FLAGS) $(DEBUG_FLAGS) $(INCLUDES) \
 		./src/main.cpp -o $(BUILD_DIR)/xseq $(STATIC_LIBS) $(LIBS)

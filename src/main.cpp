@@ -126,7 +126,7 @@ int main(int argc,char** argv) {
 	}
 	bool capture_separator = false;
 
-	for(int i=1; i < args.size(); i++) {
+	for(std::size_t i=1; i < args.size(); i++) {
 		if(args[i].compare("-a") == 0 || args[i].compare("--alpha") == 0) {
 			options.range_type = RT_ALPHA;
 			continue;
