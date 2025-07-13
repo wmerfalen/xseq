@@ -126,6 +126,7 @@ You will need to have `g++` installed. A simple `make` will build the binary for
 The code was written using widely supported C++ features. The code should compile just fine without having to tell your compiler which version of the c++ standard to use. Everything is written using well-established libraries. There are only three header files included.
 
 # License
+* Copyright (C) 2025 William Merfalen
 * License is [GPLv3+](https://gnu.org/licenses/gpl.html)
 * This is free software: you are free to change and redistribute it.
 * There is NO WARRANTY, to the extent permitted by law.
@@ -134,5 +135,4 @@ The code was written using widely supported C++ features. The code should compil
 # Special thanks
 * [Ulrich Drepper](https://github.com/drepper) Is the original author of seq
 
-* Copyright (C) 2025 William Merfalen
 
