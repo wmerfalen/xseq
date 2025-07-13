@@ -1,10 +1,10 @@
-# Overview
-xseq attempts to be an extended form of the `seq` program from GNU's coreutils.
+# Motivation
+xseq attempts to be an extended form of the `seq`
 While seq mostly works with numbers, xseq can iterate over ranges of letters.
 Some of seq's features are available in xseq.
 
-# Motivation
-seq is great. I often use it in bash scripts as an easy way to iterate over a range of numbers:
+## Goal: More flexible iteration
+- seq is great. I often use it in bash scripts as an easy way to iterate over a range of numbers:
 ```sh
 for num in $(seq 1 100); do
     echo "Fetching record ${num}..."
@@ -12,7 +12,7 @@ for num in $(seq 1 100); do
 done
 ```
 
-But sometimes, it would be nice to have the same iteration over a range of letters:
+- But sometimes, it would be nice to have the same iteration over a range of letters:
 ```sh
 for LETTER $(xseq A Z); do
     echo "Fetching users starting with letter: ${LETTER}..."
@@ -46,7 +46,8 @@ Print numbers or letters from FIRST to LAST, in steps of INCREMENT.
    xseq A 3 Z
 ```
 
-# Looping over numbers
+## Looping over numbers
+- This is exactly like seq
 ```sh
 $ xseq 1 5
 1
@@ -56,7 +57,7 @@ $ xseq 1 5
 5
 ```
 
-# automatic letter recognition
+## Letters are just integers
 ```sh
 $ xseq A F
 A
@@ -67,7 +68,8 @@ E
 F
 ```
 
-# INCREMENT works with letters and numbers
+## `<INCREMENT>` parameter
+- Useful for printing every `N` letters/numbers
 ```sh
 $ xseq A 3 M
 A
@@ -77,9 +79,10 @@ J
 M
 ```
 
-# Automatic increment/decrement
+## Ascending vs Descending
+- if `<FIRST>` is greater than `<LAST>`, the generated sequence counts down
 ```sh
-xseq Z T
+$ xseq Z T
 Z
 Y
 X
@@ -89,28 +92,47 @@ U
 T
 ```
 
-# Support for `-s STRING` and `--separator=STRING`
+### Descending with `<INCREMENT>`
 ```sh
-xseq -s , 0 10
-0,1,2,3,4,5,6,7,8,9,10,
-
-xseq --separator='}{' 0 10
-0}{1}{2}{3}{4}{5}{6}{7}{8}{9}{10}{
+$ xseq Z 3 T
+Z
+W
+T
+$
 ```
-Admittedly, this output is a bit janky, but you get the idea.
 
 
-# Building
+## Support for `-s STRING` and `--separator=STRING`
+```sh
+$ xseq -s , 0 10
+0,1,2,3,4,5,6,7,8,9,10,$
+
+$ xseq --separator='}{' 0 10
+0}{1}{2}{3}{4}{5}{6}{7}{8}{9}{10}{$
+```
+- Admittedly, this output is a bit janky, but you get the idea.
+- By default, `STRING` is the newline character. There currently is no support for windows newline sequences of `\r\n`
+
+## Minor improvements
+- xseq automatically shows you the help screen if you pass it no parameters.
+- It also shows the help screen if you pass `-h`. The original seq required the user to run `seq --help`, which is self-documenting, but tedious for the user
+
+## Features from seq
+- We plan on porting `--format=FMT`
+- We have no plans to port `--equal-width`
+
+## Building
 You will need to have `g++` installed. A simple `make` will build the binary for you.
 The code was written using widely supported C++ features. The code should compile just fine without having to tell your compiler which version of the c++ standard to use. Everything is written using well-established libraries. There are only three header files included.
 
 # License
-Copyright (C) 2025 William Merfalen
-License GPLv3+: [GNU GPL version 3 or later](https://gnu.org/licenses/gpl.html)
-This is free software: you are free to change and redistribute it.
-There is NO WARRANTY, to the extent permitted by law.
-seq is a coreutils program originally written by [Ulrich Drepper](https://github.com/drepper)
+* License is [GPLv3+](https://gnu.org/licenses/gpl.html)
+* This is free software: you are free to change and redistribute it.
+* There is NO WARRANTY, to the extent permitted by law.
+* This code is inspired by, but contains *ABSOLUTELY NO* code from coreutils' version of seq
 
-# Author
-WIlliam Merfalen
+# Special thanks
+* [Ulrich Drepper](https://github.com/drepper) Is the original author of seq
+
+* Copyright (C) 2025 William Merfalen
 
