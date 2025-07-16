@@ -1,10 +1,10 @@
 # Motivation
-xseq attempts to be an extended form of the `seq`
-While seq mostly works with numbers, xseq can iterate over ranges of letters.
+xseq attempts to be an extended form of the `seq` command from coreutils.
+While `seq` mostly works with numbers, xseq can iterate over ranges of letters.
 Some of seq's features are available in xseq.
 
 ## Goal: More flexible iteration
-- seq is great. I often use it in bash scripts as an easy way to iterate over a range of numbers:
+- seq is great. It can be used in bash scripts as an easy way to iterate over a range of numbers:
 ```sh
 for num in $(seq 1 100); do
     echo "Fetching record ${num}..."
